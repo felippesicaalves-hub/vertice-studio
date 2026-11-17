@@ -1,0 +1,71 @@
+.site { --ink: #1f2b3d; --bg: #fff4e0; --orange: #ff7a3d;
+  width: 1200px; background: var(--bg); color: var(--ink); font-family: var(--f-nunito), sans-serif; }
+.m { width: 420px; }
+
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 24px 56px; }
+.m .nav { padding: 16px 20px; }
+.logo { font: 800 34px/1 var(--f-baloo); letter-spacing: -.02em; }
+.logo span { color: var(--orange); }
+.m .logo { font-size: 28px; }
+.links { display: flex; gap: 32px; font-size: 16px; font-weight: 600; }
+.links i { font-style: normal; }
+.navBtn { border: 2.5px solid var(--ink); font-weight: 700; padding: 9px 18px; border-radius: 999px; box-shadow: 3px 3px 0 var(--ink); background: #fff; }
+.m .navBtn { font-size: 13px; padding: 6px 12px; }
+
+.hero { display: grid; grid-template-columns: 1fr 520px; gap: 40px; padding: 40px 56px 72px; align-items: center; }
+.m .hero { grid-template-columns: 1fr; padding: 20px 20px 36px; gap: 20px; }
+.kicker { display: inline-block; font-weight: 700; font-size: 15px; background: var(--ink); color: var(--bg); padding: 5px 12px; border-radius: 6px; transform: rotate(-2deg); margin: 0 0 20px; }
+.m .kicker { font-size: 12px; margin-bottom: 12px; }
+.h1 { font: 800 88px/.95 var(--f-baloo); letter-spacing: -.03em; margin: 0; }
+.h1 span { color: var(--orange); }
+.m .h1 { font-size: 46px; }
+.lead { font-size: 19px; line-height: 1.55; max-width: 28em; margin: 22px 0 0; color: #45526a; }
+.m .lead { font-size: 15px; margin-top: 12px; }
+.ctas { display: flex; gap: 22px; align-items: center; margin-top: 28px; }
+.m .ctas { margin-top: 16px; }
+.btn { background: var(--orange); color: #fff; font-weight: 800; padding: 15px 24px; border-radius: 999px; border: 2.5px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+.m .btn { padding: 11px 16px; font-size: 14px; }
+.link { font-weight: 700; text-decoration: underline wavy var(--orange); text-underline-offset: 6px; }
+
+.stage { position: relative; }
+.toy { display: block; width: 100%; aspect-ratio: 1; touch-action: pan-y; cursor: grab; font-family: var(--f-baloo); }
+.meter { display: flex; align-items: center; gap: 12px; margin-top: 6px; font-weight: 700; font-size: 15px; }
+.m .meter { font-size: 12px; }
+.meter > span:first-child { min-width: 15em; }
+.m .meter > span:first-child { min-width: 0; flex: 1; }
+.bar { flex: 1; height: 14px; border: 2.5px solid var(--ink); border-radius: 999px; overflow: hidden; background: #fff; }
+.bar i { display: block; height: 100%; background: #ff5a5f; transition: width .2s; }
+
+.list { padding: 64px 56px; }
+.m .list { padding: 36px 20px; }
+.h2 { font: 800 60px/1 var(--f-baloo); margin: 0 0 28px; letter-spacing: -.02em; }
+.m .h2 { font-size: 36px; margin-bottom: 16px; }
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.m .cards { grid-template-columns: 1fr 1fr; gap: 10px; }
+.cardItem { border: 2.5px solid var(--ink); border-radius: 22px; padding: 24px; box-shadow: 5px 5px 0 var(--ink); }
+.cardItem:nth-child(even) { transform: rotate(1.2deg); }
+.cardItem:nth-child(odd) { transform: rotate(-1deg); }
+.m .cardItem { padding: 14px; border-radius: 16px; }
+.cardItem b { font: 800 28px var(--f-baloo); }
+.m .cardItem b { font-size: 20px; }
+.cardItem p { margin: 8px 0 0; font-size: 15px; line-height: 1.45; }
+.m .cardItem p { font-size: 12px; }
+
+.cta { margin: 0 56px 64px; padding: 48px 56px; background: var(--ink); color: var(--bg); border-radius: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.m .cta { margin: 0 16px 32px; padding: 28px 22px; flex-direction: column; align-items: flex-start; }
+.cta h2 { font: 800 60px/1 var(--f-baloo); margin: 0; }
+.m .cta h2 { font-size: 34px; }
+.btnLight { background: var(--orange); color: #fff; font-weight: 800; font-size: 18px; padding: 16px 26px; border-radius: 999px; white-space: nowrap; }
+
+/* no celular a brincadeira vem primeiro */
+.m .stage { order: -1; }
+
+/* painel do gerador quando o negócio não tem brincadeira própria */
+.mono { aspect-ratio: 1; border: 2.5px solid var(--ink); border-radius: 32px; box-shadow: 6px 6px 0 var(--ink); background: #a9d8ee; display: flex; flex-direction: column; justify-content: space-between; padding: 30px; transform: rotate(1.5deg); }
+.mono b { font: 800 300px/.8 var(--f-baloo); color: var(--orange); }
+.mono span { font-weight: 700; font-size: 16px; }
+.m .mono b { font-size: 170px; }
+.m .mono { order: -1; }
+
+.boardWrap { align-self: stretch; }
+.m .boardWrap { order: -1; }

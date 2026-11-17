@@ -1,0 +1,67 @@
+.site { --ink: #2e2724; --bg: #efe9e1; --sage: #7f8b74; --line: #cfc5b8;
+  width: 1200px; background: var(--bg); color: var(--ink); font-family: var(--f-jost), sans-serif; }
+.m { width: 420px; }
+
+.nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 28px 56px; border-bottom: 1px solid var(--line); }
+.m .nav { grid-template-columns: 1fr auto; padding: 18px 20px; }
+.logo { font: 500 30px/1 var(--f-cormorant); letter-spacing: .02em; }
+.logo em { font-style: italic; }
+.m .logo { font-size: 24px; }
+.links { display: flex; gap: 36px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; }
+.links i { font-style: normal; }
+.navBtn { justify-self: end; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; border-bottom: 1px solid var(--ink); padding-bottom: 3px; }
+
+.hero { display: grid; grid-template-columns: 1fr 440px; gap: 80px; padding: 64px 56px 80px; align-items: center; }
+.m .hero { grid-template-columns: 1fr; padding: 28px 20px 40px; gap: 24px; }
+.kicker { font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--sage); margin: 0 0 26px; }
+.m .kicker { font-size: 11px; margin-bottom: 14px; }
+.h1 { font: 400 112px/.92 var(--f-cormorant); letter-spacing: -.02em; margin: 0; }
+.h1 em { font-style: italic; color: var(--sage); }
+.m .h1 { font-size: 58px; }
+.lead { font-size: 18px; line-height: 1.7; max-width: 27em; margin: 28px 0 0; color: #5b524c; font-weight: 400; }
+.m .lead { font-size: 15px; margin-top: 16px; }
+.ctas { display: flex; gap: 28px; align-items: center; margin-top: 36px; }
+.m .ctas { margin-top: 20px; }
+.btn { background: var(--ink); color: var(--bg); font-size: 13px; letter-spacing: .18em; text-transform: uppercase; padding: 18px 28px; }
+.m .btn { padding: 14px 18px; font-size: 11px; }
+.link { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; border-bottom: 1px solid var(--ink); padding-bottom: 3px; }
+.m .link { font-size: 11px; }
+
+.fig { margin: 0; }
+.toy { display: block; width: 100%; aspect-ratio: 440 / 560; touch-action: pan-y; cursor: none; }
+.m .toy { width: 78%; margin: 0 auto; }
+.cap { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; font: italic 400 20px var(--f-cormorant); color: #5b524c; }
+.cap button { font: 400 12px var(--f-jost); letter-spacing: .16em; text-transform: uppercase; background: none; border: 0; border-bottom: 1px solid var(--ink); padding: 0 0 3px; cursor: pointer; color: var(--ink); }
+
+.list { padding: 80px 56px; border-top: 1px solid var(--line); }
+.m .list { padding: 40px 20px; }
+.h2 { font: 400 64px/1 var(--f-cormorant); margin: 0 0 36px; }
+.m .h2 { font-size: 40px; margin-bottom: 20px; }
+.list ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 72px; }
+.m .list ol { grid-template-columns: 1fr; }
+.list li { display: grid; grid-template-columns: 56px 1fr; padding: 26px 0; border-top: 1px solid var(--line); }
+.list li span { font: italic 400 22px var(--f-cormorant); color: var(--sage); }
+.list li b { font: 500 30px/1.1 var(--f-cormorant); }
+.m .list li b { font-size: 24px; }
+.list li p { grid-column: 2; margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: #5b524c; }
+
+.cta { padding: 96px 56px; background: #e2d9cd; text-align: center; }
+.m .cta { padding: 48px 20px; }
+.cta h2 { font: 400 84px/1 var(--f-cormorant); margin: 0; }
+.cta h2 em { font-style: italic; color: var(--sage); }
+.m .cta h2 { font-size: 44px; }
+.cta p { font-size: 17px; color: #5b524c; margin: 18px auto 34px; max-width: 30em; }
+.btnDark { display: inline-block; background: var(--ink); color: var(--bg); font-size: 13px; letter-spacing: .18em; text-transform: uppercase; padding: 18px 28px; }
+
+/* no celular a brincadeira vem primeiro */
+.m .fig { order: -1; }
+
+/* painel do gerador quando o negócio não tem brincadeira própria */
+.mono { aspect-ratio: 440 / 560; border: 1px solid var(--ink); border-radius: 220px 220px 0 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; background: #e2d9cd; }
+.mono b { font: italic 400 300px/.8 var(--f-cormorant); color: var(--sage); }
+.mono span { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
+.m .mono b { font-size: 170px; }
+.m .mono { order: -1; }
+
+.boardWrap { align-self: stretch; }
+.m .boardWrap { order: -1; }

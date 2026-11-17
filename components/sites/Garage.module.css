@@ -1,0 +1,57 @@
+.site { --ink: #18191b; --ground: #dcd8cf; --step: #cfcac0; --accent: #ffb000; --paper: #f6f4ef;
+  width: 1200px; background: var(--ground); color: var(--ink); font-family: var(--f-saira), sans-serif; }
+.m { width: 420px; }
+
+.top { background: var(--ink); color: var(--paper); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 26px 56px; }
+.m .nav { padding: 18px 20px; }
+.logo { font: 800 30px/1 var(--f-sairacond); text-transform: uppercase; letter-spacing: .01em; }
+.m .logo { font-size: 21px; }
+.links { display: flex; gap: 32px; font-size: 16px; }
+.links i { font-style: normal; }
+.navBtn { background: var(--accent); color: var(--ink); font: 800 17px var(--f-sairacond); text-transform: uppercase; padding: 12px 20px; }
+.m .navBtn { font-size: 13px; padding: 9px 11px; }
+
+.hero { display: grid; grid-template-columns: 1fr 520px; gap: 56px; padding: 36px 56px 96px; align-items: center; }
+.m .hero { grid-template-columns: 1fr; padding: 14px 20px 44px; gap: 26px; }
+.h1 { font-family: var(--f-sairacond); font-weight: 800; line-height: .88; text-transform: uppercase; margin: 0; }
+.h1 span { display: block; color: var(--accent); }
+.lead { font-size: 20px; line-height: 1.55; margin: 30px 0 0; max-width: 28em; color: #e6e3dc; }
+.m .lead { font-size: 16px; margin-top: 16px; }
+.where { margin: 16px 0 0; font-size: 16px; color: #9a9790; }
+.ctas { display: flex; gap: 24px; align-items: center; margin-top: 34px; }
+.m .ctas { flex-wrap: wrap; gap: 14px; margin-top: 22px; }
+.btn { background: var(--accent); color: var(--ink); font: 800 21px var(--f-sairacond); text-transform: uppercase; padding: 17px 28px; }
+.m .btn { font-size: 16px; padding: 13px 18px; }
+.link { font-weight: 600; text-decoration: underline; text-underline-offset: 6px; }
+.lift { background: #111214; }
+.toy { display: block; width: 100%; aspect-ratio: 520 / 560; touch-action: pan-y; cursor: pointer; font-family: var(--f-sairacond); }
+.meter { margin: 0; padding: 16px 20px; background: #26282c; font: 600 20px var(--f-sairacond); text-transform: uppercase; color: var(--paper); }
+.m .meter { font-size: 14px; padding: 12px 14px; }
+.boardWrap { --bd-bg: #26282c; --bd-ink: var(--paper); --bd-accent: var(--accent); --bd-head: var(--f-sairacond); --bd-body: var(--f-saira); }
+
+.order { padding: 100px 56px; }
+.m .order { padding: 48px 20px; }
+.sheet { background: var(--paper); padding: 56px 64px; }
+.m .sheet { padding: 26px 18px; }
+.sheetHead { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; border-bottom: 3px solid var(--ink); padding-bottom: 18px; margin-bottom: 8px; }
+.sheetHead span { font: 600 18px var(--f-sairacond); text-transform: uppercase; color: #6b6861; }
+.m .sheetHead { flex-direction: column; gap: 4px; }
+.h2 { font: 800 72px/.9 var(--f-sairacond); text-transform: uppercase; margin: 0; }
+.m .h2 { font-size: 42px; }
+.sheet ul { list-style: none; margin: 0; padding: 0; }
+.sheet li { display: grid; grid-template-columns: 34px 300px 1fr; gap: 18px; align-items: center; padding: 18px 0; border-bottom: 1px solid #d3cfc6; }
+.m .sheet li { grid-template-columns: 28px 1fr; gap: 4px 12px; }
+.m .sheet li span { grid-column: 2; }
+.sheet li i { width: 26px; height: 26px; border: 3px solid var(--ink); position: relative; }
+.checked::after { content: ""; position: absolute; left: 6px; top: 1px; width: 7px; height: 13px; border: solid var(--ink); border-width: 0 4px 4px 0; transform: rotate(45deg); }
+.sheet li b { font: 800 30px/1 var(--f-sairacond); text-transform: uppercase; }
+.m .sheet li b { font-size: 24px; }
+.sheet li span { font-size: 17px; color: #44423d; }
+
+.cta { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: end; background: var(--accent); padding: 96px 56px; }
+.m .cta { grid-template-columns: 1fr; padding: 52px 20px; gap: 18px; }
+.cta h2 { font-family: var(--f-sairacond); font-weight: 800; line-height: .9; text-transform: uppercase; margin: 0; }
+.cta p { margin: 0 0 22px; font-size: 19px; line-height: 1.5; }
+.btnDark { display: inline-block; background: var(--ink); color: var(--paper); font: 800 21px var(--f-sairacond); text-transform: uppercase; padding: 17px 28px; }
+.m .btnDark { font-size: 16px; padding: 13px 18px; }

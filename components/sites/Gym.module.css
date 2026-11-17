@@ -1,0 +1,60 @@
+.site { --ink: #efece4; --ground: #141414; --step: #1d1d1d; --accent: #ff5a1f;
+  width: 1200px; background: var(--ground); color: var(--ink); font-family: var(--f-archivo), sans-serif; }
+.m { width: 420px; }
+
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 26px 56px; }
+.m .nav { padding: 18px 20px; }
+.brandBox { display: flex; align-items: baseline; gap: 16px; }
+.logo { font: 900 34px/1 var(--f-shoulders); text-transform: uppercase; letter-spacing: .01em; }
+.m .logo { font-size: 26px; }
+.where { font-size: 15px; color: #a9a59c; }
+.links { display: flex; gap: 32px; font-size: 16px; font-weight: 500; }
+.links i { font-style: normal; }
+.navBtn { background: var(--accent); color: #140a05; font: 800 18px var(--f-shoulders); text-transform: uppercase; letter-spacing: .03em; padding: 12px 20px; }
+.m .navBtn { font-size: 14px; padding: 9px 12px; }
+
+.hero { display: grid; grid-template-columns: 1fr 520px; gap: 48px; padding: 40px 56px 72px; align-items: center; }
+.m .hero { grid-template-columns: 1fr; padding: 22px 20px 40px; gap: 26px; }
+.h1 { font-family: var(--f-shoulders); font-weight: 900; line-height: .86; text-transform: uppercase; letter-spacing: -.005em; margin: 0; }
+.h1 span { display: block; }
+.lead { font-size: 20px; line-height: 1.5; max-width: 30em; margin: 30px 0 0; }
+.m .lead { font-size: 16px; margin-top: 16px; }
+.ctas { display: flex; gap: 24px; align-items: center; margin-top: 34px; }
+.m .ctas { margin-top: 20px; flex-wrap: wrap; gap: 14px; }
+.btn { background: var(--accent); color: #140a05; font: 800 22px var(--f-shoulders); text-transform: uppercase; letter-spacing: .03em; padding: 18px 28px; }
+.m .btn { font-size: 17px; padding: 13px 18px; }
+.link { font-weight: 700; font-size: 17px; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; }
+
+.rack { background: var(--step); }
+.toy { display: block; width: 100%; aspect-ratio: 520 / 560; touch-action: pan-y; cursor: grab; font-family: var(--f-shoulders); }
+.toy:active { cursor: grabbing; }
+.controls { display: flex; align-items: center; gap: 10px; padding: 14px 16px; background: #0d0d0d; }
+.ctl { font: 800 18px var(--f-shoulders); text-transform: uppercase; color: var(--ink); background: #2a2a2a; border: 0; padding: 10px 14px; cursor: pointer; transition: background .15s, transform .1s; }
+.ctl:hover { background: #3a3a3a; }
+.ctl:active { transform: scale(.96); }
+.ctl:disabled { opacity: .35; cursor: default; }
+.reps { margin-left: auto; font: 800 20px var(--f-shoulders); text-transform: uppercase; color: var(--accent); }
+.m .reps { font-size: 15px; }
+.m .ctl { font-size: 14px; padding: 8px 10px; }
+
+.boardWrap { --bd-bg: var(--step); --bd-ink: var(--ink); --bd-accent: var(--accent); --bd-head: var(--f-shoulders); --bd-body: var(--f-archivo); }
+
+.classes { padding: 96px 56px; background: var(--ink); color: var(--ground); }
+.m .classes { padding: 48px 20px; }
+.h2 { font: 900 96px/.9 var(--f-shoulders); text-transform: uppercase; margin: 0 0 40px; }
+.m .h2 { font-size: 54px; margin-bottom: 22px; }
+.classes ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.m .classes ul { grid-template-columns: 1fr; }
+.classes li { display: flex; flex-direction: column; gap: 6px; padding: 26px 28px; background: #e3dfd5; transition: background .2s; }
+.classes li:hover { background: var(--accent); }
+.m .classes li { padding: 18px; }
+.classes li b { font: 900 40px/1 var(--f-shoulders); text-transform: uppercase; }
+.m .classes li b { font-size: 30px; }
+.classes li span { font-size: 17px; }
+
+.cta { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: end; background: var(--accent); color: #140a05; padding: 96px 56px; }
+.m .cta { grid-template-columns: 1fr; padding: 48px 20px; gap: 20px; }
+.cta h2 { font-family: var(--f-shoulders); font-weight: 900; line-height: .88; text-transform: uppercase; margin: 0; }
+.cta p { margin: 0 0 22px; font-size: 19px; line-height: 1.45; }
+.btnDark { display: inline-block; background: #140a05; color: var(--ink); font: 800 22px var(--f-shoulders); text-transform: uppercase; padding: 18px 28px; }
+.m .btnDark { font-size: 17px; padding: 13px 18px; }

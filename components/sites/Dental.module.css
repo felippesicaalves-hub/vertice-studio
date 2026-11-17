@@ -1,0 +1,66 @@
+.site { --ink: #102e2c; --teal: #0e4d4a; --mint: #d8efe6; --coral: #ff7759; --paper: #f7f7f2;
+  width: 1200px; background: var(--paper); color: var(--ink); font-family: var(--f-figtree), sans-serif; }
+.m { width: 420px; }
+
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 24px 56px; }
+.m .nav { padding: 16px 20px; }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 26px; letter-spacing: -.03em; color: var(--teal); }
+.logo i { width: 22px; height: 22px; border-radius: 50% 50% 46% 46%; background: var(--coral); }
+.links { display: flex; gap: 34px; font-size: 15px; font-weight: 500; }
+.links i { font-style: normal; }
+.navBtn { background: var(--teal); color: #fff; font-weight: 700; font-size: 15px; padding: 11px 20px; border-radius: 10px; }
+.m .navBtn { font-size: 13px; padding: 8px 14px; }
+
+.hero { display: grid; grid-template-columns: 1fr 500px; gap: 56px; padding: 48px 56px 72px; align-items: center; }
+.m .hero { grid-template-columns: 1fr; padding: 22px 20px 36px; gap: 22px; }
+.kicker { font-size: 15px; font-weight: 700; color: var(--coral); margin: 0 0 18px; }
+.m .kicker { font-size: 12px; margin-bottom: 10px; }
+.h1 { font-weight: 800; font-size: 76px; line-height: .98; letter-spacing: -.045em; margin: 0; color: var(--teal); }
+.m .h1 { font-size: 40px; }
+.lead { font-size: 19px; line-height: 1.55; max-width: 29em; margin: 24px 0 0; color: #3f5856; }
+.m .lead { font-size: 15px; margin-top: 14px; }
+.ctas { display: flex; gap: 24px; align-items: center; margin-top: 30px; }
+.m .ctas { margin-top: 18px; }
+.btn { background: var(--coral); color: #fff; font-weight: 700; padding: 16px 24px; border-radius: 12px; }
+.m .btn { padding: 12px 16px; font-size: 14px; }
+.link { font-weight: 700; color: var(--teal); }
+
+.card { background: #fff; border-radius: 24px; padding: 18px; }
+.toy { display: block; width: 100%; aspect-ratio: 480 / 520; touch-action: pan-y; cursor: none; }
+.status { display: flex; align-items: center; gap: 12px; padding: 12px 8px 4px; border-top: 1px solid #e3ece8; }
+.status b { font-size: 22px; letter-spacing: -.03em; color: var(--teal); min-width: 5.5em; }
+.m .status b { font-size: 17px; }
+.status span { flex: 1; font-size: 14px; color: #5f7774; }
+.m .status span { font-size: 12px; }
+.status button { font: 700 14px var(--f-figtree); background: var(--teal); color: #fff; border: 0; border-radius: 10px; padding: 9px 14px; cursor: pointer; }
+
+.list { padding: 72px 56px; background: var(--mint); }
+.m .list { padding: 40px 20px; }
+.h2 { font-weight: 800; font-size: 56px; letter-spacing: -.04em; margin: 0 0 32px; color: var(--teal); }
+.m .h2 { font-size: 34px; margin-bottom: 18px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: rgba(14,77,74,.15); }
+.m .grid { grid-template-columns: 1fr; }
+.item { background: var(--mint); padding: 26px 26px 26px 0; display: grid; grid-template-columns: 44px 1fr; gap: 4px 8px; }
+.item span { font-weight: 700; color: var(--coral); font-size: 14px; padding-top: 6px; }
+.item b { font-size: 22px; letter-spacing: -.02em; }
+.item p { grid-column: 2; margin: 0; font-size: 15px; color: #3f5856; line-height: 1.5; }
+
+.cta { margin: 64px 56px; padding: 56px; border-radius: 28px; background: var(--teal); color: #fff; }
+.m .cta { margin: 28px 16px; padding: 30px 22px; }
+.cta h2 { font-weight: 800; font-size: 54px; letter-spacing: -.04em; line-height: 1; margin: 0; max-width: 14em; }
+.m .cta h2 { font-size: 30px; }
+.cta p { font-size: 18px; color: #bfdcd6; margin: 16px 0 26px; }
+.btnLight { display: inline-block; background: var(--coral); color: #fff; font-weight: 700; padding: 16px 24px; border-radius: 12px; }
+
+/* no celular a brincadeira vem primeiro */
+.m .card { order: -1; }
+
+/* painel do gerador quando o negócio não tem brincadeira própria */
+.mono { aspect-ratio: 480 / 560; background: var(--mint); border-radius: 24px; display: flex; flex-direction: column; justify-content: space-between; padding: 32px; color: var(--teal); }
+.mono b { font-weight: 800; font-size: 320px; line-height: .8; letter-spacing: -.06em; }
+.mono span { font-weight: 700; font-size: 16px; }
+.m .mono b { font-size: 180px; }
+.m .mono { order: -1; }
+
+.boardWrap { align-self: stretch; }
+.m .boardWrap { order: -1; }
